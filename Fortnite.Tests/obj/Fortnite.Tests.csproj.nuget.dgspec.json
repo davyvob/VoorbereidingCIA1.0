@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\Fortnite.Tests.csproj": {}
+    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\Fortnite.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj": {
+    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj",
+        "projectUniqueName": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj",
         "projectName": "Fortnite.GameEngine",
-        "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj",
+        "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj",
         "packagesPath": "C:\\Users\\davyv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\obj\\",
+        "outputPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\Fortnite.Tests.csproj": {
+    "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\Fortnite.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\Fortnite.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\Fortnite.Tests.csproj",
         "projectName": "Fortnite.Tests",
-        "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\Fortnite.Tests.csproj",
+        "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\Fortnite.Tests.csproj",
         "packagesPath": "C:\\Users\\davyv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\obj\\",
+        "outputPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj": {
-                "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj"
+              "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj": {
+                "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj"
               }
             }
           }

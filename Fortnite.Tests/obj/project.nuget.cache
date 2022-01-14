@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uRlvlL975YmvMyQr3FxfbDoduUDQ88/qdh7KoMNytC9Y5CMdkTravlhbEaRJnfzUvr+X9XAFHV6AsfFAFfH/Eg==",
+  "dgSpecHash": "7OfyxUd40qsJh1HgkPCVhq6nkt+ALV0TXz5l/gOMPd/KnLcpvq+xDzR29P1Pz/ZVhl82ktDOh+4dkOwjjOH8Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\pe1 for commits\\st-2122-1-S2-pe1-davyvob\\Fortnite.Tests\\Fortnite.Tests.csproj",
+  "projectFilePath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Tests\\Fortnite.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davyv\\.nuget\\packages\\coverlet.collector\\1.0.1\\coverlet.collector.1.0.1.nupkg.sha512",
     "C:\\Users\\davyv\\.nuget\\packages\\microsoft.codecoverage\\16.2.0\\microsoft.codecoverage.16.2.0.nupkg.sha512",
