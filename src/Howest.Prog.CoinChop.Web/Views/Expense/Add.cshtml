@@ -1,0 +1,38 @@
+﻿@model AddExpenseViewModel
+
+@{
+    ViewData["Title"] = "Add Expense";
+}
+
+<br />
+<h4 class="section-header"><img src="~/images/coin.png" alt="Expenses" /> @ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-route="addMemberToGroup" asp-route-groupToken="@Model.GroupToken">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AddExpenseInput.ContributorId" class="control-label"></label>
+                <div class="alert alert-warning" style="padding:0 15px;margin-bottom:5px;">Not in the list? <a asp-action="Add" asp-controller="Member">Add yourself</a> first.</div>
+                <select asp-for="AddExpenseInput.ContributorId" asp-items="Model.Contributors" class="form-control"></select>
+                <span asp-validation-for="AddExpenseInput.ContributorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddExpenseInput.Amount" class="control-label"></label>
+                <input asp-for="AddExpenseInput.Amount" class="form-control" />
+                <span asp-validation-for="AddExpenseInput.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddExpenseInput.Description" class="control-label"></label>
+                <input asp-for="AddExpenseInput.Description" class="form-control" />
+                <span asp-validation-for="AddExpenseInput.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add expense" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Dashboard" asp-controller="ExpenseGroup" asp-route-groupToken="@Model.GroupToken">Back to dashboard</a>
+</div>

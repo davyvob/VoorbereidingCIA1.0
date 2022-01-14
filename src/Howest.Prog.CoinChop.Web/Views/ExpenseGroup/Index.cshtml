@@ -1,0 +1,26 @@
+﻿@model AccessExpenseGroupInput
+@{
+    ViewData["Title"] = "Coin chop";
+}
+
+<br />
+
+<div class="row">
+    <div class="col-md-5">
+        <h3>Access your group dashboard</h3>
+        <br />
+        <form method="post" asp-action="AccessDashboard" asp-controller="ExpenseGroup" class="form-inline">
+            <div class="form-group">
+                <label asp-for="Token">Group token</label>
+                <input asp-for="Token" class="form-control" autocomplete="off">
+            </div>
+            <input type="submit" value="Submit" class="form-control btn btn-primary" />
+        </form>
+    </div>
+    <div class="col-md-2 text-center text-capitalize landing-choice-label">or</div>
+    <div class="col-md-5">
+        <h3>Split costs with a group</h3>
+        <br />
+        <div class="text-left"><a asp-action="Create" class="btn btn-primary">Start a new group</a></div>
+    </div>
+</div>

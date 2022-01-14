@@ -1,0 +1,33 @@
+﻿@model AddMemberViewModel
+
+@{
+    ViewData["Title"] = "Add Member To Group";
+}
+
+<br />
+<h4 class="section-header"><img src="~/images/members.png" alt="Members" /> @ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-route="addMemberToGroup" asp-route-groupToken="@Model.GroupToken">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AddMemberInput.Name" class="control-label"></label>
+                <input asp-for="AddMemberInput.Name" class="form-control" />
+                <span asp-validation-for="AddMemberInput.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddMemberInput.Email" class="control-label"></label>
+                <input asp-for="AddMemberInput.Email" class="form-control" />
+                <span asp-validation-for="AddMemberInput.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="AddMemberInput.GroupId" type="hidden" />
+                <input type="submit" value="Add member" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Dashboard" asp-controller="ExpenseGroup" asp-route-groupToken="@Model.GroupToken">Back to dashboard</a>
+</div>

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Howest.Prog.CoinChop.Web", "Howest.Prog.CoinChop.Web\Howest.Prog.CoinChop.Web.csproj", "{404BD3A4-A536-46D5-878E-E8C60A4C40AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Howest.Prog.CoinChop.Core", "Howest.Prog.CoinChop.Core\Howest.Prog.CoinChop.Core.csproj", "{65450E53-AF1D-414C-9D1C-047308244AF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Howest.Prog.CoinChop.Infrastructure", "Howest.Prog.CoinChop.Infrastructure\Howest.Prog.CoinChop.Infrastructure.csproj", "{81A52AEA-797A-4857-92ED-358524543A0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{52080014-8E61-4F15-BF4F-38995EE8483A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Howest.Prog.CoinChop.Infrastructure.Tests", "Tests\Howest.Prog.CoinChop.Infrastructure.Tests\Howest.Prog.CoinChop.Infrastructure.Tests.csproj", "{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{404BD3A4-A536-46D5-878E-E8C60A4C40AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404BD3A4-A536-46D5-878E-E8C60A4C40AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404BD3A4-A536-46D5-878E-E8C60A4C40AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404BD3A4-A536-46D5-878E-E8C60A4C40AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65450E53-AF1D-414C-9D1C-047308244AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65450E53-AF1D-414C-9D1C-047308244AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65450E53-AF1D-414C-9D1C-047308244AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65450E53-AF1D-414C-9D1C-047308244AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A52AEA-797A-4857-92ED-358524543A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A52AEA-797A-4857-92ED-358524543A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A52AEA-797A-4857-92ED-358524543A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A52AEA-797A-4857-92ED-358524543A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4DF9D93-48DD-4D70-8AF6-5C3FAFE064E4} = {52080014-8E61-4F15-BF4F-38995EE8483A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D86DF19-9E31-4598-AE57-9C1B936FFF62}
+	EndGlobalSection
+EndGlobal

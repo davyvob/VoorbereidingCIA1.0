@@ -1,0 +1,134 @@
+﻿@model DashboardViewModel
+@{
+    ViewData["Title"] = Model.Name + " - dashboard";
+    var fullUrl = this.Url.Action("Dashboard", "ExpenseGroup", new { groupToken = Model.GroupToken }, this.Context.Request.Scheme);
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="well">
+            <p>This group is visible for anyone who visits this unique link: <a href="@fullUrl">@fullUrl</a></p>
+            <p class="text-center"></p>
+            <form class="text-center" asp-action="ReplaceToken" asp-route-groupToken="@Model.GroupToken">
+                <input type="hidden" asp-for="@Model.GroupId" />
+                <input type="hidden" asp-for="@Model.GroupToken" id="CurrentToken" name="CurrentToken" />
+                <button type="submit" class="btn btn-warning btn-xs"><span class="button-icon">&#11118;</span> Regenerate shared link</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9 col-md-9 col-sm-12">
+        <table class="table table-striped">
+            <caption>
+                <h3 class="section-header section-header-dashboard"><img src="~/images/members.png" alt="members" /> Members</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th width="1%"><a asp-action="add" asp-controller="Member" asp-route-groupToken="@Model.GroupToken" 
+                           class="btn btn-primary pull-right pull-right"><span class="button-icon">＋</span> Add member</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var member in Model.Members)
+                {
+                    long id = member.Id;
+                    <tr>
+                        <td>@member.Name</td>
+                        <td>@member.Email</td>
+                        <td>
+                            <form asp-action="remove" asp-controller="Member" asp-route-groupToken="@Model.GroupToken">
+                                <input type="hidden" asp-for="@id" />
+                                <button type="submit" class="btn btn-xs pull-right">&#10060;</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9 col-md-9 col-sm-12">
+        <table class="table table-striped">
+            <caption>
+                <h3 class="section-header section-header-dashboard"><img src="~/images/coin.png" alt="Expenses" /> Expenses</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th width="20%" class="text-center">Contribution</th>
+                    <th>Description</th>
+                    <th width="1%"><a asp-action="add" asp-controller="Expense" asp-route-groupToken="@Model.GroupToken"
+                           class="btn btn-primary pull-right"><span class="button-icon">＋</span> Add expense</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var expense in Model.SharedExpenses)
+                {
+                    long id = expense.Id;
+                    <tr>
+                        <td>@expense.Contributor.Name</td>
+                        <td class="text-right text-danger bg-negative-amount">€ @expense.Amount.ToString("N2")</td>
+                        <td>@expense.Description</td>
+                        <td>
+                            <form asp-action="remove" asp-controller="Expense" asp-route-groupToken="@Model.GroupToken">
+                                <input type="hidden" asp-for="@id" />
+                                <button type="submit" class="btn btn-xs pull-right">&#10060;</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td class="text-right text-danger expenses-total-amount">€ @Model.SharedExpenses.Sum(expense => expense.Amount).ToString("N2")</td>
+                    <td colspan="2" class="expenses-total-label">Total</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9 col-md-9 col-sm-12">
+        @if (Model.Transactions.Count() == 0) {
+            <div class="alert alert-success">
+                No compensations needed between members
+            </div>
+        }
+        else
+        {
+            <table class="table table-striped">
+                <caption>
+                    <h3 class="section-header section-header-dashboard"><img src="~/images/chop.png" alt="Chops" /> Chops</h3>
+                </caption>
+                <thead>
+                    <tr>
+                        <th class="text-center">Debt</th>
+                        <th colspan="3" class="text-center">Transaction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var transaction in Model.Transactions)
+                    {
+                        <tr>
+                            <td width="20%" class="text-right text-danger transaction-amount">€ @transaction.Amount.ToString("N2")</td>
+                            <td width="39%" class="text-right transaction-member">@transaction.Debtor.Name</td>
+                            <td width="2%" class="transaction-arrow">&#129146;</td>
+                            <td width="39%" class="text-left transaction-member">@transaction.Creditor.Name</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
