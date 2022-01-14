@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fortnite.GameEngine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Fortnite.GameEngine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fortnite.GameEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fortnite.GameEngine/1.0.0": {
+      "type": "project",
+      "path": "../Fortnite.GameEngine/Fortnite.GameEngine.csproj",
+      "msbuildProject": "../Fortnite.GameEngine/Fortnite.GameEngine.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Fortnite.GameEngine >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\davyv\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Wpf\\Fortnite.Wpf.csproj",
+      "projectName": "Fortnite.Wpf",
+      "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Wpf\\Fortnite.Wpf.csproj",
+      "packagesPath": "C:\\Users\\davyv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.Wpf\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\davyv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj": {
+              "projectPath": "C:\\Users\\davyv\\OneDrive\\Bureaublad\\Continuous integration advanved\\voorbereiding examen\\VoorbereidingCIA1.0\\Fortnite.GameEngine\\Fortnite.GameEngine.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

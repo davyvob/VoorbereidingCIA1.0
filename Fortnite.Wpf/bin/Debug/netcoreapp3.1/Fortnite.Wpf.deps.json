@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fortnite.Wpf/1.0.0": {
+        "dependencies": {
+          "Fortnite.GameEngine": "1.0.0"
+        },
+        "runtime": {
+          "Fortnite.Wpf.dll": {}
+        }
+      },
+      "Fortnite.GameEngine/1.0.0": {
+        "runtime": {
+          "Fortnite.GameEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fortnite.Wpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fortnite.GameEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
